@@ -1,0 +1,264 @@
+.header{
+    padding: 29px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.header__main-cont{
+    display: flex;
+    flex-direction: column;
+}
+
+.header__desc-cont{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 15px;
+}
+
+.header__logo{
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+
+.header__logo-circle{
+    display: block;
+    width: 18px;
+    height: 18px;
+    border-radius: 100%;
+    border: 1px solid #333;
+}
+
+.header__text-logo{
+    font-weight: 300;
+    font-size: 1.25rem;
+    color: #333;
+}
+
+.header__logo-oval{
+    display: block;
+    border: 1px solid #333;
+    border-radius: 11px;
+    width: 32px;
+    height: 17px;
+}
+
+.header__cont-nav{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 15px;
+    column-gap: 60px;
+}
+
+.header__nav{
+    display: flex;
+    align-items: center;
+    column-gap: 60px;
+}
+
+.header__nav-link{
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.header__search{
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+}
+
+.header__icon-search, .header__icon-search:focus, .header__icon-search:active{
+    background-color: #ffffff00;
+}
+
+.header__icon-enter, .header__icon-enter:focus, .header__icon-enter:active{
+    background-color: #ffffff00;
+}
+
+.header__icon-search:hover{
+    color: #7875fe;
+}
+
+.header__icon-enter:hover{
+    color: #7875fe;
+}
+
+.header__nav-nd{
+    display: none;
+}
+
+.header__burger{
+    display: none;
+    flex-direction: column;
+    border: none;
+    row-gap: 5px; 
+}
+
+.header__bar{
+    display: block;
+    border-radius: 30px;
+    height: 3px;
+    width: 22px;
+    background-color: #4c5866;
+}
+
+
+.header__search-cont{
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+
+.header__input-cont{
+    display: none;
+    position: relative;
+}
+
+.header__search-input{
+    max-width: 220px;
+    border: none;
+    border-bottom: 1px solid #d1d1e5;
+    font-weight: 400;
+    font-size: 20px;
+    color: #4c5866;
+    padding: 2px;
+    padding-right: 18px;
+}
+
+.header__search-input:active, .header__search-input:hover, .header__search-input:focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+.header__clear-button{
+    position: absolute;
+    right: 0;
+    top: 25%;
+    border: none;
+    background-color: #ffffff00;
+    color: #d1d1e5;
+}
+
+.header__clear-button:hover{
+    color: #c0bfed;
+}
+
+
+@media screen and (width <= 910px) {
+    .header{
+        padding: 10px 0 20px 0;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .header__nav{
+        display: none;
+    }
+
+    .header__nav-nd{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-top: 1px solid #ddd;
+    }
+
+    .header__nav-link-nd{
+        font-weight: 400;
+        font-size: 1.25rem;
+        color: #4c5866;
+    }
+
+    .header__desc-cont{
+        padding-bottom: 12px;
+    }
+
+    .header__nav-nd{
+        padding-top: 18px;
+    }
+}
+
+@media screen and (width <= 500px) {
+    .header{
+        padding: 11px 0 15px 0;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .header__nav-nd{
+        display: none;
+    }
+
+    .header__logo{
+        margin: 0 auto ;
+    }
+
+    .header__desc-cont{
+        flex-direction: column;
+        align-items: normal;
+        padding: 0;
+    }
+
+    .header__cont-nav{
+        padding-top: 15px;
+        justify-content: space-between;
+        row-gap: 15px;
+        border-top: 1px solid #ddd;
+    }
+
+    .header__burger{
+        display: flex;
+    }
+}
+
+@media screen and (width <= 343px) {
+    .header__search-input{
+        max-width: 180px;
+    }
+}
+
+
+
+.overlay {
+    display: none; /* Скрываем оверлей по умолчанию */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #EBEBEB; /* Полупрозрачный фон */
+    z-index: 999; /* Убедитесь, что оверлей выше других элементов */
+}
+
+.close-button{
+    border: none;
+    background-color: transparent;
+    margin-bottom: 20px;
+}
+
+.overlay__logo{
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    background-color: #ffffff;
+    padding: 11px 0;
+    justify-content: center;
+}
+
+.overlay__nav{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    padding: 15px;
+    padding-top: 18px;
+}
+
+.overlay__nav-link{
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: #4c5866;
+}
+
+.overlay__nav-link:not(:last-of-type){
+    margin-bottom: 50px;
+}

@@ -1,0 +1,160 @@
+.info{
+    background-color: #EBEBEB;
+    padding: 90px 0;
+}
+
+.info__cont{
+    display: flex;
+    flex-direction: column;
+    row-gap: 90px;
+}
+
+.info__items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 30px;
+}
+
+.info__item{
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    border-top: 1px solid #c0c0c0;
+}
+
+.info__item-img{
+    max-width: 160px;
+    width: 100%;
+    height: auto;
+}
+
+
+.info__item-title{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    color: #666;
+}
+
+.info__item-text{
+    line-height: 150%;
+}
+
+.info__card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 30px;
+}
+
+.info__card-img{
+    /* max-width: 730px;
+    width: 100%;
+    height: auto; */
+    display: block;
+    width: 730px;
+    height: 564px;
+    background-image: url(../images/CardImg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.info__card-cont{
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+
+
+
+@media screen and (width <= 970px) {
+    .info__item{
+        flex-direction: column;
+    }
+}
+
+@media screen and (width <= 768px) {
+    .info{
+        padding: 60px 0;
+    }
+
+    .info__cont{
+        row-gap: 40px;
+    }
+
+    .info__card{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 30px;
+    }
+    
+    .info__card-img{
+        width: 330px;
+        height: 256px;
+        align-self: flex-start;
+    }
+    
+    .info__card-cont{
+        max-width: 330px;
+    }
+
+}
+
+@media screen and (width <= 690px) {
+    .info__card-img{
+        width: 330px;
+        height: 255px;
+    }
+
+    .info__card{
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 20px;
+    }
+
+    .info__card-cont{
+        max-width: 510px;
+    }
+}
+
+@media screen and (width <= 576px) {
+    .info__item-img{
+        max-width: 150px;
+    }
+
+    .info__item-title{
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (width <= 320px) {
+    .info__cont{
+        row-gap: 60px;
+    }
+
+    .info__item-img{
+        max-width: 130px;
+    }
+
+    .info__items{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info__item{
+        flex-direction: row;
+        padding-bottom: 20px;
+    }
+
+    .info__card-img{
+        width: 290px;
+        height: 223px;
+    }
+}

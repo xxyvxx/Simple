@@ -1,0 +1,141 @@
+.page{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    background-color: #FFFFFF;
+    color: #FFFFFF;
+
+    overflow: hidden;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: #4C5866;
+}
+
+a:hover{
+    color: #7875fe;
+}
+
+a:focus{
+    background: #dad9fb;
+    color: #4c5866;
+}
+
+a:active{
+    color: #4946b4;
+}
+
+.cont{
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 0 40px;
+    box-sizing: content-box;
+}
+
+.button{
+    font-size: 1.25rem;
+    display: block;
+    text-align: center;
+    max-width: 255px;
+    border: 1px solid #7875fe;
+    padding: 20px 50px;
+}
+
+.button:hover{
+    background: #7875fe;
+    color: #fff;
+}
+
+.button:active{
+    color: #fff;
+    background: #4946b4;
+}
+
+.button:focus{
+    background: #dad9fb;
+    color: #7875fe;
+}
+
+p{
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 170%;
+    color: #85859b;
+}
+
+h1{
+    margin: 0;
+    font-weight: 400;
+    font-size: 3.75rem;
+    line-height: 100%;
+    color: #4c5866;
+}
+
+h2{
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 100%;
+    color: #666;
+}
+
+
+@media screen and (width <= 768px) {
+    .cont{
+        padding: 0 33px;
+    }   
+
+    h1{
+        font-size: 3.125rem;
+    }
+
+    h2{
+        font-size: 30px;
+    }
+}
+
+@media screen and (width <= 576px) {
+    .cont{
+        padding: 0 15px;
+    }   
+
+    h1{
+        font-size: 2.375rem;
+    }
+
+    h2{
+        font-size: 24px;
+    }
+
+    p{
+        font-size: 1rem;
+    }
+
+    .button{
+        max-width: 196px;
+    }
+}
+
+@media screen and (width <= 320px) {
+    h1{
+        font-size: 1.875rem;
+    }
+
+    p{
+        font-size: 0.875rem;
+    }
+
+    .button{
+        max-width: 144px;
+        font-size: 1.125rem;
+        padding: 15px 38px;
+    }
+}
